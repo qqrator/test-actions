@@ -1,2 +1,2 @@
 print('Hello world')
-print('deploy')
+# print('deploy')
