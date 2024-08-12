@@ -27,4 +27,4 @@ jobs:
         REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
         REMOTE_PATH: ${{ secrets.REMOTE_PATH }}
       run: |
-        ssh -o StrictHostKeyChecking=no $REMOTE_USER@$REMOTE_HOST "cd $REMOTE_PATH && git stash && git pull origin main"
+        ssh -o StrictHostKeyChecking=no $REMOTE_USER@$REMOTE_HOST "cd $REMOTE_PATH && git stash && git pull origin main && chmod -R 777 ../test-actions"
